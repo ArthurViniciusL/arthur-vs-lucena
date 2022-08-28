@@ -1,15 +1,23 @@
 @charset "UTF-8";
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 @font-face {
     font-family: 'AbeeZee';
     src: url('fonts/ABeeZee-Regular.otf') format('truetype');
 }
 
+
 body {
-    background: url('imgs/desktop-img-background.jpg');
+    background: url('imgs/desktop-pexels-pixabay-355770.jpg');
 }
 
 .titulo {
+    padding-top: 20px;
     font-family: 'AbeeZee', Arial;
     font-style: bold;
     font-size: 20px;
