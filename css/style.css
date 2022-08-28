@@ -7,12 +7,11 @@
 
 /*
 body {
-    background: url('imgs/desktop-pexels-pixabay-355770.jpg');
+    background: url('imgs/desktop-img-background.jpg');
 }
 */
 
 .titulo {
-    padding-top: 20px;
     font-family: 'AbeeZee', Arial;
     font-style: bold;
     font-size: 20px;

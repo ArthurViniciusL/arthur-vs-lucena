@@ -1,10 +1,12 @@
 @charset "UTF-8";
 
-@media (max-width: 390px) {
+@media (max-width: 400px) {
 
+    /*
     body {
-        background: url('imgs/mobile-pexels-pixabay-355770.jpg');
+        background: url('imgs/mobile-img-background.jpg');
     }
+    */
 
     #linha_1 {
         padding-top: 0.2%;
