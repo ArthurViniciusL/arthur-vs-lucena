@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+@media (max-width: 990px) {
+
+    body {
+        background: url('imgs/mobile-img-background.jpg');
+    }
+
+    #linha_1 {
+        padding-top: 0.2%;
+        padding-left: 10%;
+        display: block;
+        text-align: center;
+    }
+
+    #linha_2 {
+        padding-top: 0%;
+        padding-left: 10%;
+        display: block;
+        text-align: center;
+    }
+
+}

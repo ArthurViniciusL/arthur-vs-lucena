@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'AbeeZee';
+    src: url('fonts/ABeeZee-Regular.otf') format('truetype');
+}
+
+body {
+    background: url('imgs/desktop-img-background.jpg');
+}
+
+.titulo {
+    font-family: 'AbeeZee', Arial;
+    font-style: bold;
+    font-size: 20px;
+    color: #000000;
+    text-align: center;
+}
+
+.main-foto {
+    padding: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.mensagem {
+    padding: 18px;
+    font-family: 'AbeeZee';
+    font-size: 20px;
+    color: #000000;
+    text-align: center;
+}
+
+#linha_1 {
+    padding-top: 0.8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-link {
+    opacity: 70%;
+    cursor: pointer;
+
+}
+
+.github {
+    display: inline-block;
+    margin-right: 43px;
+}
+
+.linkedin {
+    display: inline-block;
+    margin-right: 43px;
+}
+
+.e-mail {
+    display: inline-block;
+    margin-right: 43px;
+}
+
+#linha_2 {
+    padding-top: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.instagram {
+    display: inline-block;
+    margin-right: 43px;
+}
+
+.twitter {
+    display: inline-block;
+    margin-right: 43px;
+
+}
