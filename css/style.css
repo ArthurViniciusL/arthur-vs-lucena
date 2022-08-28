@@ -5,10 +5,11 @@
     src: url('fonts/ABeeZee-Regular.otf') format('truetype');
 }
 
-
+/*
 body {
     background: url('imgs/desktop-pexels-pixabay-355770.jpg');
 }
+*/
 
 .titulo {
     padding-top: 20px;
