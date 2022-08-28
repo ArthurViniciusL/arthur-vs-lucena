@@ -5,6 +5,11 @@
     src: url('fonts/ABeeZee-Regular.otf') format('truetype');
 }
 
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /*
 body {
     background: url('imgs/desktop-img-background.jpg');
