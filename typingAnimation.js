@@ -1,4 +1,4 @@
-const TEXTO = "Hello... contact me by <";
+const TEXTO = "> Hello... contact me by <";
 let caractere = 0;
 let speed = 80;
 
@@ -10,4 +10,5 @@ function escrevaMensagem() {
         caractere++;
         setTimeout(escrevaMensagem, speed);
     }
+
 }

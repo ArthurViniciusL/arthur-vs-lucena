@@ -5,21 +5,38 @@
     src: url('fonts/ABeeZee-Regular.otf') format('truetype');
 }
 
+* {
+    font-family: 'AbeeZee', Arial;
+    outline: none;
+    padding: 0;
+    margin: 0;
+}
+
 body {
-    background: url('imgs/desktop-pexels-pixabay-355770.jpg');
+    background: url('imgs/background-pexels.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+h1 {
+    padding: 10px;
+    font-size: 30px;
+    font-style: bold;        
+    color: #000000;
+}
+
+h2 {
+    font-size: 20px;
+    color: #000000;
 }
 
 
 .titulo {
-    font-family: 'AbeeZee', Arial;
-    font-style: bold;
-    font-size: 20px;
-    color: #000000;
     text-align: center;
 }
 
 .main-foto {
-    margin-top: -20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,15 +44,13 @@ body {
 }
 
 .mensagem {
-    padding: 10px;
-    font-family: 'AbeeZee';
-    font-size: 20px;
-    color: #000000;
     text-align: center;
+    font-weight: 400;
+    padding: 10px;
 }
 
 #linha_1 {
-    margin-top: 6px;
+    padding-top: 6px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,17 +63,14 @@ body {
 }
 
 .github {
-    display: inline-block;
     margin-right: 43px;
 }
 
 .linkedin {
-    display: inline-block;
     margin-right: 43px;
 }
 
 .e-mail {
-    display: inline-block;
     margin-right: 43px;
 }
 
@@ -70,12 +82,9 @@ body {
 }
 
 .instagram {
-    display: inline-block;
     margin-right: 43px;
 }
 
 .twitter {
-    display: inline-block;
     margin-right: 43px;
-
 }

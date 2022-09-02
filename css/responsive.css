@@ -1,10 +1,6 @@
 @charset "UTF-8";
 
 @media (max-width: 650px) {
-    
-    body {
-        background: url('imgs/mobile-pexels-pixabay-355770.jpg');
-    }
 
     #linha_1 {
         margin-top: 6px;
