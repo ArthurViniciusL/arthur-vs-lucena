@@ -17,11 +17,11 @@
     <title>Arthur Home</title>
 </head>
 
-    <!--Modificar os links para uma 
+
+<!--Modificar os links para uma 
         lista e fazer um menu dropdown-->
 
 <body onload="escrevaMensagem()">
-
     <header>
         <div id="cabecalho">
 
@@ -30,6 +30,7 @@
                     Arthur V.S Lucena
                 </h1>
             </div>
+            <div id="msg"></div>
 
             <div class="main-foto">
                 <img src="icons/Foto.png" alt="foto do perfil">
@@ -42,6 +43,12 @@
         </div>
     </header>
 
+    <script>
+        let mensagem = window.document.getElementById("msg");
+        n = window.prompt("Qual o seu nome?")
+
+        mensagem.innerHTML = `<p>OLá : ${n}</p>`;
+    </script>
     <section>
 
         <div id="linha_1">
