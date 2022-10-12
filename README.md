@@ -1,3 +1,1 @@
  arthur-vsl
-
-#Em manutenção...
