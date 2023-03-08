@@ -1,19 +1,19 @@
 @charset "UTF-8";
 
 @font-face {
-    font-family: 'AbeeZee';
-    src: url('fonts/ABeeZee-Regular.otf') format('truetype');
+    font-family: 'Arial';
+    src: url('fonts/MarckScript-Regular.ttf') format('truetype');
 }
 
 * {
-    font-family: 'AbeeZee', Arial;
+    font-family: 'Arial', Arial;
     outline: none;
     padding: 0;
     margin: 0;
 }
 
 body {
-    background: url('imgs/background-pexels.jpg');
+    background: url('imgs/background.png');
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
@@ -30,7 +30,6 @@ h2 {
     font-size: 20px;
     color: #000000;
 }
-
 
 .titulo {
     text-align: center;
