@@ -5,32 +5,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <link rel="shortcut icon" href="icons/logo-marca.svg" type="image/x-icon">
+
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/responsive.css">
 
     <script src="typingAnimation.js"></script>
 
     <title>Arthur Home</title>
-
 </head>
 
+    <!--Modificar os links para uma 
+        lista e fazer um menu dropdown-->
+
 <body onload="escrevaMensagem()">
+
     <header>
         <div id="cabecalho">
 
             <div class="titulo">
                 <h1>
-                    Arthur Vinicius
+                    Arthur V.S Lucena
                 </h1>
             </div>
 
-            <div id="msg"></div>
-
             <div class="main-foto">
-                <img src="icons/Foto.png" alt="foto do perfil">
+                <img src="icons/Foto.png" alt="foto de perfil">
             </div>
+
             <span>
                 <h2 class="mensagem"></h2>
             </span>
@@ -40,38 +44,50 @@
 
     <section>
 
-        <ul class="btn-link">
-            <li class="github">
-                <a class="github" href="https://github.com/ArthurViniciusL" target="_blank" rel="external">
-                    <img src="icons/Github.svg" alt="github">
-                </a>
-            </li>
+        <div id="linha_1">
 
-            <li class="linkedin">
+            <div class="btn-link">
+                <a class="github" href="https://github.com/ArthurViniciusL" target="_blank" rel="external">
+                    <img src="icons/Github.svg" alt="link para o github">
+                </a>
+            </div>
+
+            <div class="btn-link">
                 <a class="linkedin" href="https://www.linkedin.com/in/arthur-vinícius-79a8441b6/" target="_blank"
                     rel="external">
-                    <img src="icons/Linkedin.svg" alt="Linkedin">
+                    <img src="icons/Linkedin.svg" alt="link para o Linkedin">
                 </a>
-            </li>
+            </div>
 
-            <li class="email">
-                <a class="email" href="mailto:arthurviniciussl.contato@gmail.com" target="_blank" rel="external">
-                    <img src="icons/E-mail.svg" alt="Linkedin">
+            <div class="btn-link">
+                <a class="e-mail" href="mailto:arthurviniciussl.contato@gmail.com" target="_blank" rel="external">
+                    <img src="icons/E-mail.svg" alt="link para o E-mail">
                 </a>
-            </li>
+            </div>
 
-            <li class="instagram">
+        </div>
+
+        <div id="linha_2">
+
+            <!--<ul>
+                <li></li>
+            </ul> -->
+
+            <div class="btn-link">
                 <a class="instagram" href="https://www.instagram.com/arthur.vsl/" target="_blank" rel="external">
-                    <img src="icons/Instagram.svg" alt="Instagram">
+                    <img src="icons/Instagram.svg" alt="link para o Instagram">
                 </a>
-            </li>
-            <li class="twitter">
+            </div>
+
+            <div class="btn-link">
                 <a class="twitter" href="https://twitter.com/ArthurViniSL" target="_blank" rel="external">
-                    <img src="icons/Twitter.svg" alt="twitter">
+                    <img src="icons/Twitter.svg" alt="link para o Twitter">
                 </a>
-            </li>
-        </ul>
+            </div>
+        </div>
+
     </section>
 
 </body>
+
 </html>

@@ -1,38 +1,24 @@
 @charset "UTF-8";
 
-.github:hover {
+/*
+.main-foto:hover {
+    transform: scale(1.1);
+    transition: all 0.7s;
+}
+*/
+
+.btn-link:hover {
     opacity: 100%;
     transition: all 0.5s;
     transform: scale(1.1);
 }
-
-.linkedin:hover {
-    opacity: 100%;
-    transition: all 0.5s;
-    transform: scale(1.1);
-}
-
-.email:hover {
-    opacity: 100%;
-    transition: all 0.5s;
-    transform: scale(1.1);
-}
-
-.instagram:hover {
-    opacity: 100%;
-    transition: all 0.5s;
-    transform: scale(1.1);
-}
-
-.twitter:hover {
-    opacity: 100%;
-    transition: all 0.5s;
-    transform: scale(1.1);
-}
-
 
 .mensagem {
     margin: 0 auto;
     white-space: nowrap;
     overflow: hidden;
 }
+
+/*
+typing animation gerada no JavaScript
+*/
