@@ -1,3 +1,4 @@
+/*https://www.freecodecamp.org/portuguese/news/como-centralizar-tudo-com-css*/
 
 :root {
   --backgrond-page: #F5F5F7;
@@ -8,26 +9,44 @@
   --rounded-edges: 15px;
 }
 
+.img-perfil {
+  width: 35%;
+  height: 35%;
+}
+
 body {
   padding: 10px;
   margin: 0;
   border: 0;
   align-items: center;
-  width: center;
+  text-align: center;
 
+  /*
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  */
   background-color: var(--backgrond-page);
 }
 
 section {
   border-color: red;
+  border-style: solid;
+  
   border-width: 2px;
   padding: 30px;
 
-  
+
   width: 190vh;
   height: 90vh;
-  
+
+
   background-color: var(--section-color);
   border-radius: var(--rounded-edges);
-  border-style: solid;
+}
+
+div {
+  text-align: center;
+  padding: 30px;
 }
