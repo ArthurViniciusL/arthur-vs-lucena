@@ -15,38 +15,26 @@
 }
 
 body {
-  padding: 10px;
-  margin: 0;
-  border: 0;
-  align-items: center;
-  text-align: center;
-
-  /*
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  */
   background-color: var(--backgrond-page);
 }
 
-section {
-  border-color: red;
-  border-style: solid;
-  
-  border-width: 2px;
-  padding: 30px;
-
-
-  width: 190vh;
-  height: 90vh;
-
-
-  background-color: var(--section-color);
-  border-radius: var(--rounded-edges);
+main {
+  margin: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-div {
-  text-align: center;
+section {
+  width: 95%;
+  /*height: 85vh;*/
+  height: 100vh;
+
+  max-height: 30%;
+  margin-bottom: 20px;
+  background-color: var(--section-color);
+  border-radius: 20px;
   padding: 30px;
+  text-align: center;
 }
