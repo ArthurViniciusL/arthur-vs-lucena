@@ -10,8 +10,8 @@
 }
 
 .img-perfil {
-  width: 35%;
-  height: 35%;
+  width: 40%;
+  height: 40%;
 }
 
 body {
@@ -37,4 +37,27 @@ section {
   border-radius: 20px;
   padding: 30px;
   text-align: center;
+}
+
+
+.btn-cv {
+
+  border: none;
+  height: 50px;
+  width: 100%;
+  padding: 9px 19px;
+  border-radius: 7px;
+  
+  color: #F5F5F7;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: #000000;
+}
+
+.btn-cv:hover {
+  color: var(--text-color);
+  background-color: var(--section-color);
+  border-color: #FFBD08;
+  border-style: dashed;
+  transition: background-color 1s, color 1s;
 }
