@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+@media only screen and (max-width: 480px) {
+
+    #img-perfil {
+        max-width: 95%;
+        max-height: 95%;
+    }
+
+    #title_my_name {
+        font-family: 'Pacificio';
+        font-size: 50px;
+
+        margin: 0;
+        padding: 0;
+    }
+
+    .container-title-about {
+        display: flex;
+        align-items: center;
+
+        height: 25px;
+        margin: 1px;
+        border: none;
+    }
+
+    #yellow_ball {
+        width: 10px;
+        height: 10px;
+        margin-right: 15px;
+        border-radius: 100%;
+    }
+
+    #title_about {
+        font-size: 30px;
+        text-align: left;
+        font-family: "Pacificio";
+
+    }
+
+    .about_text {
+        font-size: 95%;
+        text-align: justify;
+    }
+
+
+    .container-grid-list {
+        display: grid;
+        grid-template-columns: repeat(2, 120px);
+        padding: 0%;
+        margin: 0%;
+    }
+
+    .icon-social-net {
+        align-items: baseline;
+        height: 60%;
+        width: 60%;
+
+        max-height: 65%;
+        max-width: 65%;
+    }
+}
