@@ -22,12 +22,6 @@
   --time-transition: 0.5s;
 }
 
-
-#AVISO {
-  color: red;
-  font-weight: lighter;
-}
-
 body {
   background-color: var(--backgrond-page);
   overflow-x: hidden;
@@ -114,7 +108,7 @@ footer {
 
 
 
-.container_about_text {
+.container-bout-text {
 
   min-width: 90%;
   margin: 30px;
@@ -129,7 +123,18 @@ footer {
   background-color: transparent;
 }
 
-.container-grid-list {
+#container-grid-list {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 350px;
+
+}
+
+.grid-list {
   display: grid;
   grid-gap: 5px;
   grid-template-columns: repeat(2, 190px);
