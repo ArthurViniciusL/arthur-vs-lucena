@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+.icon-social-net:hover {
+    height: 90%;
+    width: 90%;
+    transition: var(--time-transition);
+}
+
+.btn-cv:hover {
+    color: var(--text-color);
+    background-color: var(--section-color);
+    border-color: #FFBD08;
+    border-style: dashed;
+    border-width: 2px;
+    transition: background-color var(--time-transition);
+}

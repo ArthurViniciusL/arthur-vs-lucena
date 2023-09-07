@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 5%);
+    grid-column-gap: 1%;
+    /* Define o espaçamento entre as colunas */
+    grid-row-gap: 1%;
+    /* Define o espaçamento entre as linhas */
+    list-style: none;
+    padding: 0;
+}
+
+.grid li {
+    border: 1px solid red;
+    margin: 0;
+    padding: 0;
+    max-width: 40px;
+}
