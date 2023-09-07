@@ -23,6 +23,10 @@
 }
 
 
+#AVISO {
+  color: red;
+}
+
 body {
   background-color: var(--backgrond-page);
   overflow-x: hidden;
