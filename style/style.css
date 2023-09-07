@@ -23,6 +23,11 @@
 }
 
 
+#AVISO {
+  color: red;
+  font-weight: lighter;
+}
+
 body {
   background-color: var(--backgrond-page);
   overflow-x: hidden;
@@ -38,23 +43,23 @@ main {
 
 section {
   width: 95%;
-  /*height: 85vh;*/
-  max-height: 120%;
-  /*height: 120vh*/
+  height: 120%;
   padding: 30px;
   margin-bottom: 20px;
   border-radius: 20px;
   text-align: center;
   background-color: var(--section-color);
+
 }
 
 p {
   font-family: "OpenSans";
+
 }
 
 ul {
   list-style-type: none;
-   margin: 25px;
+  margin: 25px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -75,18 +80,21 @@ footer {
 #img-perfil {
   max-width: 45%;
   max-height: 45%;
-
 }
 
 #title_my_name {
   font-family: 'Pacificio';
-  font-size: 10vh;
+  font-size: 100px;
+
+  margin: 0;
+  padding: 0;
 }
 
 .container-title-about {
-
   display: flex;
   align-items: center;
+
+  height: 45px;
 }
 
 #yellow_ball {
@@ -104,10 +112,14 @@ footer {
 
 }
 
-.about_text {
-  font-size: 20px;
-  text-align: justify;
 
+
+.container_about_text {
+
+  min-width: 90%;
+  margin: 30px;
+  font-size: 150%;
+  text-align: justify;
 }
 
 
@@ -118,7 +130,6 @@ footer {
 }
 
 .container-grid-list {
-
   display: grid;
   grid-gap: 5px;
   grid-template-columns: repeat(2, 190px);
@@ -127,8 +138,8 @@ footer {
 
 .icon-social-net {
   align-items: baseline;
-  height: 80%;
-  width: 80%;
+  height: 75%;
+  width: 75%;
 }
 
 .btn-cv {
