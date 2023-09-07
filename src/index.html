@@ -10,85 +10,89 @@
 
 
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/transition.css">
 </head>
 
 <body>
     <main>
 
-        <section>
+        <section  >
             <div>
-                <img class="img-perfil" src="img/my_img.png" alt="foto de perfil" srcset="">
+                <img id="img-perfil" src="media/img/my_img.png" alt="foto de perfil" srcset="">
             </div>
 
             <div>
-                <h1>Arthur Vinicius</h1>
+                <h1 id="title_my_name">Arthur Vinicius</h1>
             </div>
         </section>
 
         <section>
-
             <div>
-                <h2>Sobre mim</h2>
-            </div>
+                <div class="container-title-about">
+                    <div id="yellow_ball"><!--bolinha--></div>
+                    <h2 id="title_about">Sobre mim</h2>
+                </div>
 
-            <div>
-                <p>Olá, meu nome é Arthur e sou estudante de Sistemas de informação, Paraibano, programador arretado,
-                    designer e cinéfilo nas horas vagas.</p>
-                <p>
-                    Meu principal interesse hoje se concentra no mundo do desenvolvimento Web, especialmente na área de
-                    Front End. Mas para além disso eu posso dizer que minha verdadeira paixão está por desenvolver
-                    produtos
-                    úteis para o mundo de forma criativa, sempre buscando conectar o melhor da programação e do
-                    designer.
-                    Com qualidade, agilidade e paixão.
-                </p>
+                <div class="about_text">
+                    <p>Olá, meu nome é Arthur e sou estudante de Sistemas de informação, Paraibano, programador
+                        arretado,
+                        designer e cinéfilo nas horas vagas.</p>
+                    <p>
+                        Meu principal interesse hoje se concentra no mundo do desenvolvimento Web, especialmente na área
+                        de
+                        Front End. Mas para além disso eu posso dizer que minha verdadeira paixão está por desenvolver
+                        produtos
+                        úteis para o mundo de forma criativa, sempre buscando conectar o melhor da programação e do
+                        designer.
+                        Com qualidade, agilidade e paixão.
+                    </p>
+                </div>
             </div>
 
         </section>
 
         <section>
 
-            <div>
-                <ul>
-                    <li>
-                        <button>
-                            <a href="http://" target="_blank" rel="noopener noreferrer">
-                                <img src="img/icons/github.png" alt="icone github">
-                            </a>
-                        </button>
-                    </li>
+            <ul class="container-grid-list">
+                <li>
+                    <button class="btn-contact-me">
+                        <a href="http://" target="_blank" rel="noopener noreferrer">
+                            <img class="icon-social-net" src="media/img/icons/github.png" alt="icone github">
+                        </a>
+                    </button>
+                </li>
 
-                    <li>
-                        <button>
-                            <a href="http://">
-                                <img src="img/icons/linkedin.png" alt="icone linkedin">
-                            </a>
-                        </button>
-                    </li>
+                <li>
+                    <button class="btn-contact-me">
+                        <a href="http://">
+                            <img class="icon-social-net" src="media/img/icons/linkedin.png" alt="icone linkedin">
+                        </a>
+                    </button>
+                </li>
 
-                    <li>
-                        <button>
-                            <a href="mailto:arthurviniciussl.contato@gmail.com">
-                                <img src="img/icons/email-edit.png" alt="icone e-mail">
-                            </a>
-                        </button>
-                    </li>
+                <li>
+                    <button class="btn-contact-me">
+                        <a href="mailto:arthurviniciussl.contato@gmail.com">
+                            <img class="icon-social-net" src="media/img/icons/email-edit.png" alt="icone e-mail">
+                        </a>
+                    </button>
+                </li>
 
-                    <li>
-                        <button>
-                            <a href="http://" target="_blank" rel="noopener noreferrer">
-                                <img src="img/icons/instagram.png" alt="icone instagram">
-                            </a>
-                        </button>
-                    </li>
-                </ul>
-            </div>
+                <li>
+                    <button class="btn-contact-me">
+                        <a href="http://" target="_blank" rel="noopener noreferrer">
+                            <img class="icon-social-net" src="media/img/icons/instagram.png" alt="icone instagram">
+                        </a>
+                    </button>
+                </li>
+            </ul>
+        
 
         </section>
 
         <footer>
             <div>
-                <a href="downloads/Currículo-TESTE.pdf" download="Arthur Vincius - CV">
+                <a href="media/downloads/Currículo-TESTE.pdf" download="Arthur Vincius - CV">
                     <button class="btn-cv">
                         Baixe o meu currículo
                     </button>
