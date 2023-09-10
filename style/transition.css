@@ -3,14 +3,14 @@
 .icon-social-net:hover {
     height: 85%;
     width: 85%;
-    transition: var(--time-transition);
+    transition: var(--timeTransition);
 }
 
 .btn-cv:hover {
-    color: var(--text-color);
-    background-color: var(--section-color);
-    border-color: var(--yewllow-arthur);
+    color: var(--textColor);
+    background-color: var(--sectionColor);
+    border-color: var(--lightFillArthur);
     border-style: dashed;
     border-width: 2px;
-    transition: background-color var(--time-transition);
+    transition: background-color var(--timeTransition);
 }
