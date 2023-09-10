@@ -13,11 +13,11 @@ function verificarModoDeCor() {
         browserTheme = "dark";
 
         // fazer modificações via o DOM
-        console.log("modo: " + browserTheme)
+        console.log("modo: " + browserTheme);
     } else {
         // fazer modificações via o DOM
         browserTheme = "light";
-        console.log("modo : " + browserTheme)
+        console.log("modo : " + browserTheme);
     }
 }
 
