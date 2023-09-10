@@ -14,14 +14,14 @@ async function readJson() {
 }
 
 async function changeThemeColor() {
-
+    
     const CORES = await readJson();
-
+    
     // indentificando o tema do sistema
     let browserTheme = null;
     const LIGHT_THEME = window.matchMedia('(prefers-color-scheme: light)');
     const DARK_THEME = window.matchMedia('(prefers-color-scheme: dark)');
-
+    
     // lendo componentes
     const MY_IMG = document.querySelector('#img-perfil');
     const TITLE_NAME = document.querySelector('#title_my_name');
@@ -32,6 +32,9 @@ async function changeThemeColor() {
     // getElementsByTagName retorna uma lista de atributos:
     const TAG_SECTION = document.getElementsByTagName('section');
 
+    // transicao do background
+    document.body.style.transition = `background-color  ${CORES.timeTransition} ease, color ${CORES.timeTransition} ease`;
+    
     if ((LIGHT_THEME && DARK_THEME).matches) {
         browserTheme = 'dark mode';
 
@@ -39,6 +42,7 @@ async function changeThemeColor() {
         document.body.style.backgroundColor = CORES.DARK.backgrondColor;
         for (let i = 0; i < TAG_SECTION.length; i++) {
             TAG_SECTION[i].style.backgroundColor = CORES.DARK.sectionColor;
+            TAG_SECTION[i].style.transition = `background-color  ${CORES.timeTransition} ease, color ${CORES.timeTransition} ease`;
         }
         MY_IMG.style.borderColor = CORES.DARK.fillColorArthur;
         TITLE_NAME.style.color = CORES.DARK.textColor;
@@ -69,10 +73,12 @@ async function changeThemeColor() {
         document.body.style.backgroundColor = CORES.LIGHT.backgrondColor;
         for (let i = 0; i < TAG_SECTION.length; i++) {
             TAG_SECTION[i].style.backgroundColor = CORES.LIGHT.sectionColor;
+            TAG_SECTION[i].style.transition = `background-color  ${CORES.timeTransition} ease, color ${CORES.timeTransition} ease`;
         }
         MY_IMG.style.borderColor = CORES.LIGHT.fillColorArthur;
         TITLE_NAME.style.color = CORES.LIGHT.textColor;
         ICON_TITLE_ABOUT.style.backgroundColor = CORES.LIGHT.fillColorArthur;
+        TITLE_ABOUT.style.color = CORES.LIGHT.textColor;
         TEXT_ABOUT.style.color = CORES.LIGHT.textColor;
         BTN_CV.style.borderColor = CORES.BTN.LIGHT.fillColorArthur;
         BTN_CV.style.color = CORES.BTN.LIGHT.leaveBtnTextColor;
@@ -92,8 +98,8 @@ async function changeThemeColor() {
 
         console.log(">>> " + browserTheme);
     }
+
 }
 
-changeThemeColor();
 // ouvinte de eventos para reagir a alterações no modo de cor
 window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', changeThemeColor);
