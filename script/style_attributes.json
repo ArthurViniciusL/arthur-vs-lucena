@@ -1,0 +1,16 @@
+{
+    "LIGHT": {
+        "backgrondColor": "#F5F5F7",
+        "sectionColor": "#FFFFFF",
+        "textColor": "#000000",
+        "yewllowArthur": "#FFBD08"
+    },
+    "DARK": {
+        "backgrondColor": "#262626",
+        "sectionColor": "#303030",
+        "textColor": "#000000",
+        "blueArthur": "#174AE4"
+    },
+    "roundedEdges": "15px",
+    "timeTransition": "0.5s"
+}
