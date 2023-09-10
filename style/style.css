@@ -1,6 +1,5 @@
 @charset "UTF-8";
 
-/*Importando fontes externas*/
 @font-face {
   font-family: "Pacificio";
   src: url('fonts/Pacifico/Pacifico-Regular.ttf');
@@ -12,9 +11,7 @@
   src: url('fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf');
 
 }
-/*------------------------------------------------------*/
 
-/*Declarando variáveis*/
 :root {
   --backgrond-page: #F5F5F7;
   --section-color: #FFFFFF;
@@ -24,9 +21,7 @@
   --rounded-edges: 15px;
   --time-transition: 0.5s;
 }
-/*------------------------------------------------------*/
 
-/*Estilização geral das tags*/
 body {
   background-color: var(--backgrond-page);
   overflow-x: hidden;
@@ -74,9 +69,8 @@ footer {
   justify-content: center;
   align-items: center;
 }
-/*------------------------------------------------------*/
 
-/*Componentes da priemeira section*/
+
 #img-perfil {
   max-width: 45%;
   max-height: 45%;
@@ -89,9 +83,7 @@ footer {
   margin: 0;
   padding: 0;
 }
-/*------------------------------------------------------*/
 
-/*Componentes da segunda section*/
 .container-title-about {
   display: flex;
   align-items: center;
@@ -114,14 +106,17 @@ footer {
 
 }
 
+
+
 .container-bout-text {
+
   min-width: 90%;
   margin: 30px;
   font-size: 150%;
   text-align: justify;
 }
 
-/*Componentes da terceira section*/
+
 .btn-contact-me {
   border: none;
   padding: 10px;
@@ -129,6 +124,7 @@ footer {
 }
 
 #container-grid-list {
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -151,9 +147,6 @@ footer {
   width: 75%;
 }
 
-/*------------------------------------------------------*/
-
-/*Componentes do footer*/
 .btn-cv {
   border: none;
   height: 50px;
@@ -166,4 +159,3 @@ footer {
   font-weight: bold;
   background-color: #000000;
 }
-/*------------------------------------------------------*/
