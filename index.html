@@ -3,91 +3,116 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="shortcut icon" href="icons/logo-marca.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="media/img/icons/logo-marca.svg" type="image/my-icon">
+    <title>Arthur Lucena</title>
 
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/animation.css">
-    <link rel="stylesheet" href="css/responsive.css">
 
-    <script src="typingAnimation.js"></script>
-
-    <title>Arthur Home</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/transition.css">
+    <link rel="stylesheet" href="style/responsive.css">
 </head>
 
-    <!--Modificar os links para uma 
-        lista e fazer um menu dropdown-->
 
-<body onload="escrevaMensagem()">
-
-    <header>
-        <div id="cabecalho">
-
-            <div class="titulo">
-                <h1>
-                    Arthur V.S Lucena
-                </h1>
+<body>
+    <main>
+        <section>
+            <div>
+                <img id="img-perfil" src="media/img/my_img.png" alt="foto de perfil" srcset="">
             </div>
 
-            <div class="main-foto">
-                <img src="icons/Foto.png" alt="foto de perfil">
+            <div>
+                <h1 id="title_my_name">Arthur Vinicius</h1>
+            </div>
+        </section>
+
+        <section>
+            <div>
+                <div class="container-title-about">
+                    <div id="yellow_ball"><!--bolinha--></div>
+                    <h2 id="title_about">Sobre mim</h2>
+                </div>
+
+                <div class="container-bout-text">
+                    <p>
+                        Olá, meu nome é Arthur e sou estudante de Sistemas de informação, Paraibano, programador
+                        arretado, designer e cinéfilo nas horas vagas.
+                    </p>
+                    <p>
+                        Atualmente, meu foco principal está no desenvolvimento web, com ênfase na área de Front-End. No
+                        entanto, minha verdadeira paixão reside em criar produtos inovadores de maneira criativa,
+                        combinando habilidades de programação e design para proporcionar a criação de algo com
+                        qualidade, agilidade e paixão.
+                    </p>
+                    <p>
+                        Estou entusiasmado em dar meus primeiros passos práticos no mercado de tecnologia e contribuir
+                        para o ecossistema da área. Durante meus três anos de experiência universitária, participei
+                        ativamente de projetos em equipe e também desenvolvi projetos individuais. E aproveitando o
+                        conhecimento adquirido por meio de cursos, livros, projetos e muitas horas lendo documentações
+                        de tecnologia. Essa jornada me permitiu desenvolver tanto habilidades técnicas quanto sociais.
+                    </p>
+                </div>
             </div>
 
-            <span>
-                <h2 class="mensagem"></h2>
-            </span>
-        </div>
-        </div>
-    </header>
+        </section>
 
-    <section>
+        <section>
+            <div id="container-grid-list">
+                <ul class="grid-list">
+                    <li>
+                        <a href="https://github.com/ArthurViniciusL" target="_blank" rel="noopener noreferrer">
+                            <button class="btn-contact-me">
+                                <img class="icon-social-net" src="media/img/icons/github.png" alt="icone github">
+                            </button>
+                        </a>
+                    </li>
 
-        <div id="linha_1">
+                    <li>
+                        <a href="https://www.linkedin.com/in/arthur-vin%C3%ADcius-79a8441b6/?originalSubdomain=br"
+                            target="_blank">
+                            <button class="btn-contact-me">
+                                <img class="icon-social-net" src="media/img/icons/linkedin.png" alt="icone linkedin">
+                            </button>
+                        </a>
+                    </li>
 
-            <div class="btn-link">
-                <a class="github" href="https://github.com/ArthurViniciusL" target="_blank" rel="external">
-                    <img src="icons/Github.svg" alt="link para o github">
+                    <li>
+                        <a href="mailto:arthurviniciussl.contato@gmail.com">
+                            <button class="btn-contact-me">
+                                <img class="icon-social-net" src="media/img/icons/email-edit.png" alt="icone e-mail">
+                            </button>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.instagram.com/arthur.vsl/?next=%2F" target="_blank"
+                            rel="noopener noreferrer">
+                            <button class="btn-contact-me">
+                                <img class="icon-social-net" src="media/img/icons/instagram.png" alt="icone instagram">
+                            </button>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </section>
+
+        <footer>
+            <div>
+                <a href="media/downloads/Arthur-Vinicius-CV.pdf" download="Arthur Vincius - CV">
+                    <button class="btn-cv">
+                        Confira o meu currículo
+                    </button>
                 </a>
             </div>
+        </footer>
+    </main>
 
-            <div class="btn-link">
-                <a class="linkedin" href="https://www.linkedin.com/in/arthur-vinícius-79a8441b6/" target="_blank"
-                    rel="external">
-                    <img src="icons/Linkedin.svg" alt="link para o Linkedin">
-                </a>
-            </div>
 
-            <div class="btn-link">
-                <a class="e-mail" href="mailto:arthurviniciussl.contato@gmail.com" target="_blank" rel="external">
-                    <img src="icons/E-mail.svg" alt="link para o E-mail">
-                </a>
-            </div>
 
-        </div>
-
-        <div id="linha_2">
-
-            <!--<ul>
-                <li></li>
-            </ul> -->
-
-            <div class="btn-link">
-                <a class="instagram" href="https://www.instagram.com/arthur.vsl/" target="_blank" rel="external">
-                    <img src="icons/Instagram.svg" alt="link para o Instagram">
-                </a>
-            </div>
-
-            <div class="btn-link">
-                <a class="twitter" href="https://twitter.com/ArthurViniSL" target="_blank" rel="external">
-                    <img src="icons/Twitter.svg" alt="link para o Twitter">
-                </a>
-            </div>
-        </div>
-
-    </section>
-
+    <!--<script src="script/Main.js"></script>-->
+    <script src="script/theme.js"></script>
 </body>
 
 </html>

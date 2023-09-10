@@ -1,0 +1,161 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "Pacificio";
+  src: url('fonts/Pacifico/Pacifico-Regular.ttf');
+
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url('fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf');
+
+}
+
+:root {
+  --backgrond-page: #F5F5F7;
+  --section-color: #FFFFFF;
+  --text-color: #000000;
+  --yewllow-arthur: #FFBD08;
+  --blue-arthur: #174AE4;
+  --rounded-edges: 15px;
+  --time-transition: 0.5s;
+}
+
+body {
+  background-color: var(--backgrond-page);
+  overflow-x: hidden;
+}
+
+main {
+  margin: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  width: 95%;
+  height: 120%;
+  padding: 30px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  text-align: center;
+  background-color: var(--section-color);
+
+}
+
+p {
+  font-family: "OpenSans";
+
+}
+
+ul {
+  list-style-type: none;
+  margin: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+div {}
+
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#img-perfil {
+  max-width: 45%;
+  max-height: 45%;
+}
+
+#title_my_name {
+  font-family: 'Pacificio';
+  font-size: 100px;
+
+  margin: 0;
+  padding: 0;
+}
+
+.container-title-about {
+  display: flex;
+  align-items: center;
+
+  height: 45px;
+}
+
+#yellow_ball {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  margin-right: 20px;
+  background-color: var(--yewllow-arthur);
+}
+
+#title_about {
+  font-size: 40px;
+  text-align: left;
+  font-family: "Pacificio";
+
+}
+
+
+
+.container-bout-text {
+
+  min-width: 90%;
+  margin: 30px;
+  font-size: 150%;
+  text-align: justify;
+}
+
+
+.btn-contact-me {
+  border: none;
+  padding: 10px;
+  background-color: transparent;
+}
+
+#container-grid-list {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 350px;
+
+}
+
+.grid-list {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: repeat(2, 190px);
+  padding: 0;
+}
+
+.icon-social-net {
+  align-items: baseline;
+  height: 75%;
+  width: 75%;
+}
+
+.btn-cv {
+  border: none;
+  height: 50px;
+  width: 100%;
+  padding: 9px 19px;
+  border-radius: 7px;
+
+  color: #F5F5F7;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: #000000;
+}
