@@ -12,23 +12,25 @@
   src: url('fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf');
 
 }
+
 /*------------------------------------------------------*/
 
 /*Declarando variáveis*/
 :root {
-  --backgrond-page: #F5F5F7;
-  --section-color: #FFFFFF;
-  --text-color: #000000;
-  --yewllow-arthur: #FFBD08;
-  --blue-arthur: #174AE4;
-  --rounded-edges: 15px;
-  --time-transition: 0.5s;
+  --backgrondColor: #F5F5F7;
+  --sectionColor: #FFFFFF;
+  --textColor: #000000;
+  --lightFillArthur: #FFBD08;
+  --darkFillArthur: #AA21FF;
+  --roundedEdges: 15px;
+  --timeTransition: 0.5s;
 }
+
 /*------------------------------------------------------*/
 
 /*Estilização geral das tags*/
 body {
-  background-color: var(--backgrond-page);
+  background-color: var(--backgrondColor);
   overflow-x: hidden;
 }
 
@@ -47,7 +49,7 @@ section {
   margin-bottom: 20px;
   border-radius: 20px;
   text-align: center;
-  background-color: var(--section-color);
+  background-color: var(--sectionColor);
 
 }
 
@@ -74,12 +76,18 @@ footer {
   justify-content: center;
   align-items: center;
 }
+
 /*------------------------------------------------------*/
 
 /*Componentes da priemeira section*/
 #img-perfil {
   max-width: 45%;
   max-height: 45%;
+
+  border-width: 16px;
+  border-style: solid;
+  border-radius: 100%;
+  border-color: var(--lightFillArthur);
 }
 
 #title_my_name {
@@ -89,6 +97,7 @@ footer {
   margin: 0;
   padding: 0;
 }
+
 /*------------------------------------------------------*/
 
 /*Componentes da segunda section*/
@@ -104,7 +113,7 @@ footer {
   height: 20px;
   border-radius: 100%;
   margin-right: 20px;
-  background-color: var(--yewllow-arthur);
+  background-color: var(--lightFillArthur);
 }
 
 #title_about {
@@ -166,4 +175,5 @@ footer {
   font-weight: bold;
   background-color: #000000;
 }
+
 /*------------------------------------------------------*/
