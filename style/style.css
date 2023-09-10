@@ -67,9 +67,6 @@ ul {
   align-items: center;
 }
 
-div {}
-
-
 footer {
   display: flex;
   flex-direction: column;
@@ -84,7 +81,7 @@ footer {
   max-width: 45%;
   max-height: 45%;
 
-  border-width: 16px;
+  border-width: 10px;
   border-style: solid;
   border-radius: 100%;
   border-color: var(--lightFillArthur);
