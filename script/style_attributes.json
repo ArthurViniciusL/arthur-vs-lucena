@@ -3,13 +3,29 @@
         "backgrondColor": "#F5F5F7",
         "sectionColor": "#FFFFFF",
         "textColor": "#000000",
-        "yewllowArthur": "#FFBD08"
+        "fillColorArthur": "#FFBD08"
     },
     "DARK": {
         "backgrondColor": "#262626",
         "sectionColor": "#303030",
-        "textColor": "#000000",
-        "blueArthur": "#174AE4"
+        "textColor": "#FFFFFF",
+        "fillColorArthur": "#174AE4"
+    },
+    "BTN": {
+        "LIGHT": {
+            "enterBtnTextColor": "#000000",
+            "enterBtnBackgroundColor": "FFFFFF",
+            "leaveBtnTextColor": "#FFFFFF",
+            "leaveBtnBackgroundColor": "#000000",
+            "fillColorArthur": "#FFBD08"
+        },
+        "DARK": {
+            "enterBtnTextColor": "#FFFFFF",
+            "enterBtnBackgroundColor": "#303030",
+            "leaveBtnTextColor": "#000000",
+            "leaveBtnBackgroundColor": "#FFFFFF",
+            "fillColorArthur": "#174AE4"
+        }
     },
     "roundedEdges": "15px",
     "timeTransition": "0.5s"

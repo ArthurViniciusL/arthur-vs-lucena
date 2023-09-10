@@ -35,65 +35,59 @@ async function changeThemeColor() {
         browserTheme = 'dark mode';
 
         // alterando CORES dos componentes
-        document.body.style.backgroundColor = CORES.dark.darkBackgrondColor;
+        document.body.style.backgroundColor = CORES.DARK.backgrondColor;
         for (let i = 0; i < TAG_SECTION.length; i++) {
-            TAG_SECTION[i].style.backgroundColor = CORES.darktSectionColor;
+            TAG_SECTION[i].style.backgroundColor = CORES.DARK.sectionColor;
         }
-        TITLE_NAME.style.color = CORES.darkTextColor;
-        TITLE_ABOUT.style.color = CORES.darkTextColor;
-        TEXT_ABOUT.style.color = CORES.darkTextColor;
+        TITLE_NAME.style.color = CORES.DARK.textColor;
+        TITLE_ABOUT.style.color = CORES.DARK.textColor;
+        TEXT_ABOUT.style.color = CORES.DARK.textColor;
+        BTN_CV.style.borderColor = CORES.BTN.DARK.fillColorArthur;
+        BTN_CV.style.color = CORES.BTN.DARK.leaveBtnTextColor;
+        BTN_CV.style.backgroundColor = CORES.BTN.DARK.leaveBtnBackgroundColor;
 
         BTN_CV.addEventListener('mouseenter', () => {
-            BTN_CV.style.borderColor = 'red';
-            BTN_CV.style.color = '';
-            BTN_CV.style.backgroundColor = '';
+            BTN_CV.style.borderColor = CORES.BTN.DARK.fillColorArthur;
+            BTN_CV.style.color = CORES.BTN.DARK.enterBtnTextColor;
+            BTN_CV.style.backgroundColor = CORES.BTN.DARK.enterBtnBackgroundColor;
         });
 
         BTN_CV.addEventListener('mouseleave', () => {
-            BTN_CV.style.borderColor = '';
-            BTN_CV.style.color = '';
-            BTN_CV.style.backgroundColor = '';
+            BTN_CV.style.borderColor = CORES.BTN.DARK.fillColorArthur;
+            BTN_CV.style.color = CORES.BTN.DARK.leaveBtnTextColor;
+            BTN_CV.style.backgroundColor = CORES.BTN.DARK.leaveBtnBackgroundColor;
         });
 
 
     } else {
         browserTheme = 'light mode';
 
-        //zerando mudancas do dark mode
-        document.body.style.backgroundColor = CORES.lightBackgrondColor;
+        // voltando para o modo light
+        document.body.style.backgroundColor = CORES.LIGHT.backgrondColor;
         for (let i = 0; i < TAG_SECTION.length; i++) {
-            TAG_SECTION[i].style.backgroundColor = CORES.lightSectionColor; // Define a cor de fundo para azul para cada elemento
+            TAG_SECTION[i].style.backgroundColor = CORES.LIGHT.sectionColor;
         }
-        TITLE_NAME.style.color = CORES.lightTextColor;
-        TITLE_ABOUT.style.color = CORES.lightTextColor
-        //TEXT_ABOUT.style.color = CORES.lightTextColor;
+        TITLE_NAME.style.color = CORES.LIGHT.textColor;
+        TITLE_ABOUT.style.color = CORES.LIGHT.textColor;
+        TEXT_ABOUT.style.color = CORES.LIGHT.textColor;
+        BTN_CV.style.borderColor = CORES.BTN.LIGHT.fillColorArthur;
+        BTN_CV.style.color = CORES.BTN.LIGHT.leaveBtnTextColor;
+        BTN_CV.style.backgroundColor = CORES.BTN.LIGHT.leaveBtnBackgroundColor;
 
         BTN_CV.addEventListener('mouseenter', () => {
-            BTN_CV.style.borderColor = '';
-            BTN_CV.style.color = '';
-            BTN_CV.style.backgroundColor = '';
+            BTN_CV.style.borderColor = CORES.BTN.LIGHT.fillColorArthur;
+            BTN_CV.style.color = CORES.BTN.LIGHT.enterBtnTextColor;
+            BTN_CV.style.backgroundColor = CORES.BTN.LIGHT.enterBtnBackgroundColor;
         });
 
         BTN_CV.addEventListener('mouseleave', () => {
-            BTN_CV.style.borderColor = '';
-            BTN_CV.style.color = '';
-            BTN_CV.style.backgroundColor = '';
+            BTN_CV.style.borderColor = CORES.BTN.LIGHT.fillColorArthur;
+            BTN_CV.style.color = CORES.BTN.LIGHT.leaveBtnTextColor;
+            BTN_CV.style.backgroundColor = CORES.BTN.LIGHT.leaveBtnBackgroundColor;
         });
 
-        BTN_CV.addEventListener('mouseenter', () => {
-            BTN_CV.style.borderColor = '';
-            BTN_CV.style.color = '';
-            BTN_CV.style.backgroundColor = '';
-        });
-
-        BTN_CV.addEventListener('mouseleave', () => {
-            BTN_CV.style.borderColor = '';
-            BTN_CV.style.color = '';
-            BTN_CV.style.backgroundColor = '';
-        });
+        console.log(">>> " + browserTheme);
     }
-
-    console.log(">>> " + browserTheme);
 }
 
 changeThemeColor();

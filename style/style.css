@@ -80,6 +80,10 @@ footer {
 #img-perfil {
   max-width: 45%;
   max-height: 45%;
+  border-color: red;
+  border-width: 20px;
+  border-style: solid;
+  border-radius: 100%;
 }
 
 #title_my_name {
