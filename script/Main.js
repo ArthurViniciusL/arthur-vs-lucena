@@ -23,10 +23,11 @@ async function changeThemeColor() {
     const DARK_THEME = window.matchMedia('(prefers-color-scheme: dark)');
 
     // lendo componentes
+    const MY_IMG = document.querySelector('#img-perfil');
     const TITLE_NAME = document.querySelector('#title_my_name');
+    const ICON_TITLE_ABOUT = document.querySelector("#yellow_ball");
     const TITLE_ABOUT = document.querySelector('#title_about');
     const TEXT_ABOUT = document.querySelector('.container-bout-text');
-
     const BTN_CV = document.querySelector('.btn-cv');
     // getElementsByTagName retorna uma lista de atributos:
     const TAG_SECTION = document.getElementsByTagName('section');
@@ -39,7 +40,9 @@ async function changeThemeColor() {
         for (let i = 0; i < TAG_SECTION.length; i++) {
             TAG_SECTION[i].style.backgroundColor = CORES.DARK.sectionColor;
         }
+        MY_IMG.style.borderColor = CORES.DARK.fillColorArthur;
         TITLE_NAME.style.color = CORES.DARK.textColor;
+        ICON_TITLE_ABOUT.style.backgroundColor = CORES.DARK.fillColorArthur;
         TITLE_ABOUT.style.color = CORES.DARK.textColor;
         TEXT_ABOUT.style.color = CORES.DARK.textColor;
         BTN_CV.style.borderColor = CORES.BTN.DARK.fillColorArthur;
@@ -67,8 +70,9 @@ async function changeThemeColor() {
         for (let i = 0; i < TAG_SECTION.length; i++) {
             TAG_SECTION[i].style.backgroundColor = CORES.LIGHT.sectionColor;
         }
+        MY_IMG.style.borderColor = CORES.LIGHT.fillColorArthur;
         TITLE_NAME.style.color = CORES.LIGHT.textColor;
-        TITLE_ABOUT.style.color = CORES.LIGHT.textColor;
+        ICON_TITLE_ABOUT.style.backgroundColor = CORES.LIGHT.fillColorArthur;
         TEXT_ABOUT.style.color = CORES.LIGHT.textColor;
         BTN_CV.style.borderColor = CORES.BTN.LIGHT.fillColorArthur;
         BTN_CV.style.color = CORES.BTN.LIGHT.leaveBtnTextColor;
