@@ -1,3 +1,10 @@
+checkBrowserTheme();
+// loadOla();
+// Ouvinte de eventos para reagir a alterações no modo de cor
+window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', checkBrowserTheme);
+
+
+
 function changeThemeColor(theme, color) {
 
     // coletando atributos
@@ -54,7 +61,6 @@ async function readJson() {
         return null;
     }
 }
-
 async function checkBrowserTheme() {
 
     const COR_JSON = await readJson();
@@ -75,8 +81,3 @@ async function checkBrowserTheme() {
 
     console.log(">>> " + browserTheme);
 }
-
-checkBrowserTheme();
-
-// Ouvinte de eventos para reagir a alterações no modo de cor
-window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', checkBrowserTheme);

@@ -23,6 +23,8 @@
         align-items: center;
         height: 100vh;
 
+        background-color: #EBEBEB;
+
     }
 </style>
 
@@ -46,7 +48,7 @@
     animateFill.setAttribute("from", "transparent"); // Define o valor inicial como transparente
     animateFill.setAttribute("to", "black"); // Define o valor final como a cor de preenchimento desejada (por exemplo, preto)
     animateFill.setAttribute("begin", "0.5s"); // Início da animação após 1 segundo
-    animateFill.setAttribute("dur", "5s"); // Duração da animação de 5 segundos
+    animateFill.setAttribute("dur", "2s"); // Duração da animação de 5 segundos
     animateFill.setAttribute("fill", "freeze"); // Mantém o valor final após a animação
     helloline.appendChild(animateFill); // Adiciona a animação ao elemento path
     console.log(helloline.innerHTML);
