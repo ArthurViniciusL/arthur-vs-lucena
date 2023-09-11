@@ -17,7 +17,7 @@
 
 /*Declarando variáveis*/
 :root {
-  --backgrondColor: #F5F5F7;
+  --backgrondColor: #EBEBEB;
   --sectionColor: #FFFFFF;
   --textColor: #000000;
   --lightFillArthur: #FFBD08;
@@ -167,7 +167,7 @@ footer {
   padding: 9px 19px;
   border-radius: 7px;
 
-  color: #F5F5F7;
+  color: #EBEBEB;
   font-size: 15px;
   font-weight: bold;
   background-color: #000000;
