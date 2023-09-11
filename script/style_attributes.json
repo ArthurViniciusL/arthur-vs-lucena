@@ -1,6 +1,6 @@
 {
     "LIGHT": {
-        "backgrondColor": "#F5F5F7",
+        "backgrondColor": "#EBEBEB",
         "sectionColor": "#FFFFFF",
         "textColor": "#000000",
         "fillColorArthur": "#FFBD08"
@@ -15,7 +15,6 @@
         "LIGHT": {
             "enterBtnTextColor": "#000000",
             "enterBtnBackgroundColor": "#FFFFFF",
-
             "leaveBtnTextColor": "#FFFFFF",
             "leaveBtnBackgroundColor": "#000000",
             "fillColorArthur": "#FFBD08"
