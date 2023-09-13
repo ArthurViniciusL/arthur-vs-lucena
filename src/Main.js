@@ -49,7 +49,7 @@ function changeThemeColor(theme, color) {
 }
 async function readJson() {
     try {
-        const JSON_FILE = await fetch('script/style_attributes.json');
+        const JSON_FILE = await fetch('src/style_attributes.json');
 
         if (!JSON_FILE.ok) {
             throw new Error('Erro ao carregar o arquivo JSON de CORES.');
