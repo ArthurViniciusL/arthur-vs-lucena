@@ -1,11 +1,45 @@
-checkBrowserTheme();
-// loadOla();
+getBrowserTheme();
 // Ouvinte de eventos para reagir a alterações no modo de cor
-window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', checkBrowserTheme);
+window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', getBrowserTheme);
+
+async function readJson() {
+    try {
+        const JSON_FILE = await fetch('src/style_attributes.json');
+
+        if (!JSON_FILE.ok) {
+            throw new Error('Erro ao carregar o arquivo JSON de CORES.');
+        }
+
+        return await JSON_FILE.json();
+    } catch (error) {
+        console.error(error);
+        return null;
+    }
+}
+
+async function getBrowserTheme() {
+
+    const COR_JSON = await readJson();
+    const DARK_THEME = window.matchMedia('(prefers-color-scheme: dark)');
+
+    let browserTheme = null;
+
+    if (DARK_THEME.matches) {
+        browserTheme = 'dark mode';
+        setBrowserTheme('DARK', COR_JSON);
+
+    }
+
+    else {
+        browserTheme = 'light mode';
+        setBrowserTheme('LIGHT', COR_JSON);
+    }
+
+    console.log(">>> " + browserTheme);
+}
 
 
-
-function changeThemeColor(theme, color) {
+function setBrowserTheme(theme, color) {
 
     // coletando atributos
     const TAG_SECTION = document.getElementsByTagName('section');
@@ -46,38 +80,4 @@ function changeThemeColor(theme, color) {
         BTN_CV.style.color = color.BTN[theme].leaveBtnTextColor;
         BTN_CV.style.backgroundColor = color.BTN[theme].leaveBtnBackgroundColor;
     });
-}
-async function readJson() {
-    try {
-        const JSON_FILE = await fetch('src/style_attributes.json');
-
-        if (!JSON_FILE.ok) {
-            throw new Error('Erro ao carregar o arquivo JSON de CORES.');
-        }
-
-        return await JSON_FILE.json();
-    } catch (error) {
-        console.error(error);
-        return null;
-    }
-}
-async function checkBrowserTheme() {
-
-    const COR_JSON = await readJson();
-    const DARK_THEME = window.matchMedia('(prefers-color-scheme: dark)');
-
-    let browserTheme = null;
-
-    if (DARK_THEME.matches) {
-        browserTheme = 'dark mode';
-        changeThemeColor('DARK', COR_JSON);
-
-    }
-
-    else {
-        browserTheme = 'light mode';
-        changeThemeColor('LIGHT', COR_JSON);
-    }
-
-    console.log(">>> " + browserTheme);
 }
