@@ -11,7 +11,7 @@ export class ChangeColors {
     }
 
     animateTheTransition() {
-        const time = '1.5s';
+        const time = '0.8s';
         document.body.style.transition = `background-color ${time} ease, color ${time} ease`;
         for (const section of this.tagSection) {
             section.style.transition = `background-color ${time} ease, color ${time} ease`;
@@ -23,7 +23,6 @@ export class ChangeColors {
     }
 
     changeSectionColor(background, border) {
-        //const TAG_SECTION = this.tagSection;
         for (let i = 0; i < this.tagSection.length; i++) {
             this.tagSection[i].style.backgroundColor = background;
             this.tagSection[i].style.borderColor = border;
