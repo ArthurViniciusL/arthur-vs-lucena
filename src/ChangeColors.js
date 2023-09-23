@@ -11,7 +11,7 @@ export class ChangeColors {
     }
 
     animateTheTransition() {
-        const time = '0.8s';
+        const time = '0.6s';
         document.body.style.transition = `background-color ${time} ease, color ${time} ease`;
         for (const section of this.tagSection) {
             section.style.transition = `background-color ${time} ease, color ${time} ease`;
