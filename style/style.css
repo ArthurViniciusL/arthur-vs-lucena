@@ -22,7 +22,7 @@
   --textColor: #000000;
   --lightFillArthur: #FFBD08;
   --darkFillArthur: #AA21FF;
-  --lightBorderColor: #E1E1E1;
+  --lightBorderColor: #DDDDDD;
   --roundedEdges: 15px;
   --timeTransition: 0.5s;
 }
@@ -51,7 +51,7 @@ section {
   border-radius: 20px;
   border-style: solid;
   border-width: 2px;
-  border-color: transparent;
+  border-color: var(--lightBorderColor);
   text-align: center;
   background-color: var(--sectionColor);
 

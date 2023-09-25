@@ -13,7 +13,6 @@ export class CheckBrowserTheme extends ChangeColors {
             if (!JSON_FILE.ok) {
                 throw new Error('Erro ao carregar o arquivo JSON de CORES.');
             }
-
             return await JSON_FILE.json();
         } catch (error) {
             console.error(error);
@@ -45,6 +44,5 @@ export class CheckBrowserTheme extends ChangeColors {
         this.changeFillColor(color[theme].fillColorArthur);
         this.changeFontColor(color[theme].textColor);
         this.changeBtnCv(theme, color);
-
     }
 }

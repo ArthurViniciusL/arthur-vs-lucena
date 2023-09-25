@@ -2,7 +2,7 @@
     "LIGHT": {
         "backgrondColor": "#EBEBEB",
         "sectionColor": "#FFFFFF",
-        "borderColor": "transparent",
+        "borderColor": "#DDDDDD",
         "textColor": "#000000",
         "fillColorArthur": "#FFBD08"
     },
