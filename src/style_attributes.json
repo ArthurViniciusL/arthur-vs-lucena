@@ -2,12 +2,14 @@
     "LIGHT": {
         "backgrondColor": "#EBEBEB",
         "sectionColor": "#FFFFFF",
+        "borderColor": "#DDDDDD",
         "textColor": "#000000",
         "fillColorArthur": "#FFBD08"
     },
     "DARK": {
         "backgrondColor": "#262626",
         "sectionColor": "#303030",
+        "borderColor": "#404040",
         "textColor": "#FFFFFF",
         "fillColorArthur": "#AA21FF"
     },
@@ -26,7 +28,5 @@
             "leaveBtnBackgroundColor": "#FFFFFF",
             "fillColorArthur": "#AA21FF"
         }
-    },
-    "roundedEdges": "15px",
-    "timeTransition": "0.5s"
+    }
 }
