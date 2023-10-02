@@ -35,6 +35,16 @@ body {
   overflow-x: hidden;
 }
 
+iframe {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  position: fixed;
+  overflow: hidden;
+}
+
 main {
   margin: 25px;
   display: flex;

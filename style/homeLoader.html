@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<style>
+    @charset "UTF-8";
+
+    :root {
+        --timeTransition: 5s;
+        --lightBackground: #FFFFFF;
+        --lightFont: #000000;
+        --darkBackground: #262626;
+        --darkFont: #FFFFFF;
+    }
+
+    @font-face {
+        font-family: "Pacificio";
+        src: url('fonts/Pacifico/Pacifico-Regular.ttf');
+    }
+
+    @keyframes fadeInOut {
+
+        0%,
+        100% {
+            opacity: 0;
+        }
+
+        50% {
+            opacity: 1;
+        }
+    }
+
+    body {
+        display: flex;
+        height: 100vh;
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+
+        background-color: var(--lightBackground);
+        animation: fadeInOut var(--timeTransition) infinite;
+    }
+
+    h1 {
+        font-family: 'Pacificio';
+        font-size: 150px;
+        color: var(--lightFont);
+        animation: fadeInOut var(--timeTransition) infinite;
+    }
+
+    @media (prefers-color-scheme: dark) {
+
+        body {
+            background-color: var(--darkBackground);
+        }
+
+        h1 {
+            color: var(--darkFont);
+        }
+    }
+</style>
+
+<body>
+    <h1>
+        olá
+    </h1>
+</body>
+
+</html>
