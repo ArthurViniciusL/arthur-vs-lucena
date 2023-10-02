@@ -3,9 +3,17 @@ import { CheckBrowserTheme } from './CheckBrowserTheme.js';
 class Main {
     constructor() {
         this.cores = new CheckBrowserTheme();
+        this.pageLoader();
         this.init();
     }
 
+    async pageLoader() {
+        this.elementIframe = document.getElementById('loader');
+        var timeOut = 5000;
+        setTimeout(() => {
+            this.elementIframe.style.display = 'none';
+        }, timeOut);
+    }
 
     async init() {
         this.cores.getBrowserTheme();
