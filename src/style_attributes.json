@@ -1,15 +1,15 @@
 {
     "LIGHT": {
-        "backgrondColor": "#EBEBEB",
+        "backgrondColor": "#fafafa",
         "sectionColor": "#FFFFFF",
-        "borderColor": "#DDDDDD",
+        "borderColor": "",
         "textColor": "#000000",
         "fillColorArthur": "#FFBD08"
     },
     "DARK": {
         "backgrondColor": "#262626",
         "sectionColor": "#303030",
-        "borderColor": "#404040",
+        "borderColor": "",
         "textColor": "#FFFFFF",
         "fillColorArthur": "#AA21FF"
     },

@@ -9,7 +9,7 @@ class Main {
 
     async pageLoader() {
         this.elementIframe = document.getElementById('loader');
-        var timeOut = 5000;
+        var timeOut = 4000;
         setTimeout(() => {
             this.elementIframe.style.display = 'none';
         }, timeOut);
