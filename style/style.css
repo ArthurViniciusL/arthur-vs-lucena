@@ -54,7 +54,7 @@ main {
 }
 
 section {
-  width: 95%;
+  min-width: 95vw;
   height: 120%;
   padding: 30px;
   margin-bottom: 20px;
