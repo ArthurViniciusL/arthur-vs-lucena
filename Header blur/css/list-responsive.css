@@ -1,0 +1,25 @@
+@media (max-width: 600px) {
+    .dropdown-list {
+        position: relative;
+    }
+
+    header {
+        font-size: large;
+    
+        width: 96%;
+        height: 50px;
+        margin: 20px;
+    }
+    .dropdown-links {
+        display: none;
+        top: 120%;
+
+        min-width: 45vh;
+        position: absolute;
+        border-radius: 10px;
+
+        /* background-color: red; */
+
+        transform: translateX(-93%);
+    }
+}
