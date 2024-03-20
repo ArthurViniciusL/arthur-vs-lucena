@@ -6,20 +6,28 @@
     header {
         font-size: large;
     
-        width: 96%;
+        width: 95vw;
         height: 50px;
         margin: 20px;
     }
+
     .dropdown-links {
         display: none;
-        top: 120%;
+        top: 110%;
 
-        min-width: 45vh;
+        min-width: 95vw;
         position: absolute;
         border-radius: 10px;
 
         /* background-color: red; */
 
-        transform: translateX(-93%);
+        transform: translateX(-97%);
+    }
+
+    a {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
     }
 }
