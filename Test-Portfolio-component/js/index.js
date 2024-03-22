@@ -1,18 +1,22 @@
-const iconDirectory = 'img/image-round-symbolic.svg'
+const iconDirectory = 'img/image-round-symbolic.svg';
+const subtitle = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, eum. Nesciunt non, et enim, repudiandae sint minus numquam temporibus quas tenetur totam aliquam quaerat modi, optio architecto quae voluptatibus aperiam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, eum. Nesciunt non, et enim, repudiandae sint minus numquam temporibus quas tenetur totam aliquam quaerat modi, optio architecto quae voluptatibus aperiam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, eum. Nesciunt non, et enim, repudiandae sint minus numquam temporibus quas tenetur totam aliquam quaerat modi, optio architecto quae voluptatibus aperiam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, eum. Nesciunt non, et enim, repudiandae sint minus numquam temporibus quas tenetur totam aliquam quaerat modi, optio architecto quae voluptatibus aperiam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, eum. Nesciunt non, et enim, repudiandae sint minus numquam temporibus quas tenetur totam aliquam quaerat modi, optio architecto quae voluptatibus aperiam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, eum. Nesciunt non, et enim, repudiandae sint minus numquam temporibus quas tenetur totam aliquam quaerat modi, optio architecto quae voluptatibus aperiam.';
 
-function buildHtml() {
+async function buildHtml() {
     let htmlContent = '';
-    for (let i = 0; i < 10; i++) {
+    for (let i = 0; i < 100; i++) {
         htmlContent += `
         <div class="card-container">
             <div class="cards-projects">
-                <img class="icon-project" src="${iconDirectory}" alt="" srcset="">
-                <div class="text-area">
+            <div class="icon-container">
+                <img id="icon_project" src="${iconDirectory}" alt="" srcset="">  
+            </div>
+                <div class="text-container">
                     <div class="text-content">
-                        <div class="container-icon">
+                        <div class="container-title">
                             <h2 id="project-name">${i} - Titulo do projeto</h2>
-                            <p id="project-description"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, ipsa consectetur distinctio exercitationem laboriosam doloremque dolorum? Harum eligendi tempora a iste odio omnis fugiat veritatis dolorem, asperiores aperiam repudiandae ipsa. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum repudiandae sunt illo ipsum enim eos maxime, at praesentium dicta a similique veritatis illum hic odit soluta exercitationem est, dolor labore.</p>
+                            <img id="icon_link" src="${iconDirectory}" alt="" srcset="">  
                         </div>
+                        <p id="project-description">${subtitle}</p>
                     </div>
                 </div>
             </div>
