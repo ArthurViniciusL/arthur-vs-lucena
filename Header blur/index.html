@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="css/blur.css">
     <link rel="stylesheet" href="css/list-responsive.css">
 
-    <link rel="stylesheet" href="html/Test-Portfolio-component/css/style.css">
     <title>Dropdown Menu</title>
 </head>
 
@@ -56,8 +55,6 @@
     </header>
 </body>
 
-<script src="html/Test-Portfolio-component/js/index.js"></script>
-
 <script>
     document.addEventListener('DOMContentLoaded', function () {
         const dropdownButton = document.getElementById('btn_dropdown');
@@ -67,6 +64,7 @@
             dropdownList.classList.toggle('active');
         });
 
+        // FECHAR
         document.addEventListener('click', function (event) {
             const isClickInside = dropdownList.contains(event.target) || dropdownButton.contains(event.target);
 
