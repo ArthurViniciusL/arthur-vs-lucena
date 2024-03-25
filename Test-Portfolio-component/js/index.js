@@ -1,9 +1,16 @@
-const iconDirectory = 'img/image-round-symbolic.svg';
-const subtitle = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, eum. Nesciunt non, et enim, repudiandae sint minus numquam temporibus quas tenetur totam aliquam quaerat modi, optio architecto quae voluptatibus aperiam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, eum. Nesciunt non, et enim, repudiandae sint minus numquam temporibus quas tenetur totam aliquam quaerat modi, optio architecto quae voluptatibus aperiam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, eum. Nesciunt non, et enim, repudiandae sint minus numquam temporibus quas tenetur totam aliquam quaerat modi, optio architecto quae voluptatibus aperiam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, eum. Nesciunt non, et enim, repudiandae sint minus numquam temporibus quas tenetur totam aliquam quaerat modi, optio architecto quae voluptatibus aperiam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, eum. Nesciunt non, et enim, repudiandae sint minus numquam temporibus quas tenetur totam aliquam quaerat modi, optio architecto quae voluptatibus aperiam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, eum. Nesciunt non, et enim, repudiandae sint minus numquam temporibus quas tenetur totam aliquam quaerat modi, optio architecto quae voluptatibus aperiam.';
+
+
 
 async function buildHtml() {
+
+    const iconDirectory = 'img/image-round-symbolic.svg';
+    const getTextsJson = await fetch('https://jsonplaceholder.typicode.com/posts');
+    const textJson = await getTextsJson.json();
+
     let htmlContent = '';
     for (let i = 0; i < 100; i++) {
+        let title = textJson[i].title;
+        let subtitle = textJson[i].body;
         htmlContent += `
         <div class="card-container">
             <div class="cards-projects">
@@ -13,10 +20,10 @@ async function buildHtml() {
                 <div class="text-container">
                     <div class="text-content">
                         <div class="container-title">
-                            <h2 id="project-name">${i} - Titulo do projeto</h2>
+                            <h2 id="project-name">${i} - ${title}</h2>
                             <img id="icon_link" src="${iconDirectory}" alt="" srcset="">  
                         </div>
-                        <p id="project-description">${subtitle}</p>
+                        <p id="project-description">${subtitle.substring(0, 200)}...</p>
                     </div>
                 </div>
             </div>
